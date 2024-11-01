@@ -1,0 +1,105 @@
+body{
+    background: linear-gradient(90deg, rgba(248, 137, 155, 0.689), rgba(253, 154, 170, 0.689), rgba(255, 182, 194, 0.689), rgba(255, 212, 220, 0.689));
+}
+a{
+    text-decoration: none;
+    color: orange;
+}
+input{
+    width: 100%;
+    box-shadow: none !important;
+    border-radius: 20px !important;
+}
+select{
+    border-radius: 20px!important;
+}
+label{
+    margin-left: 2.5%;
+}
+textarea{
+    border-radius: 20px!important;
+    box-shadow: none!important;
+}
+#input-mail-icon{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    z-index: 100;
+    color: black;
+}
+/* #input-all-icons{
+    position: absolute;
+    z-index: 100;
+    color: black;
+} */
+
+/* borders and error showing */
+.form-controll small{
+    padding: 5px 10px;
+    font-weight: 600;
+    color: red;
+    visibility: hidden;
+}
+.form-controll.error small{
+    visibility: visible!important;
+}
+.form-controll.success input{
+    border: 2.5px solid greenyellow !important;
+}
+.form-controll.error input{
+    border: 1.5px solid red !important;
+}
+.form-controll.error textarea{
+    border: 1.5px solid red !important;
+}
+.form-controll.success textarea{
+    border: 2.5px solid greenyellow !important;
+}
+/* Ends */
+
+/* follow link icons */
+#links-meta-icon{
+    color:black;
+}
+#links-meta-icon:hover{
+    color: white;
+    background:linear-gradient(90deg ,#1f66e5,#3676e8,#4d85ea,#6495ed,#7ba5f0,#92b4f2,#a9c4f5);
+}
+#links-insta-icon{
+    color:black;
+}
+#links-insta-icon:hover{
+    color: white;
+    background:linear-gradient(90deg ,#feda75,  #fa7e1e,  #d62976, #962fbf, #4f5bd5);
+}
+#links-twitter-icon{
+    color: black;
+}
+#links-twitter-icon:hover{
+    color: white;
+    background:linear-gradient(90deg ,#2ca1ee,#41aaef, #56b3f1,#6bbdf3,#80c6f4,#95d0f6);
+    
+}
+#links-pintrest-icon{
+    color: black;
+}
+#links-pintrest-icon:hover{
+    color: white;
+    background:linear-gradient(90deg ,#f44336,#f5554a,#f6685e,#f77b72,#f44336,#f44336,#f44336);
+}
+/* Ends */
+
+
+
+/* ------custom scrollbar------- */
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(120deg,#642bff,black, #ff22e6,red);
+    border-radius: 10px;
+}
+/* ends */

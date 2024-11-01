@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Chocolate Room | Reserve Table</title>
+
+    <!-- tabicon -->
+    <link rel="icon" type="image/x-icon" href="../title/cup_2935413.png">
+
+    <!-- boxicons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Import Css -->
+    <link rel="stylesheet" href="../Links/css/bootstrap.min.css" type="text/css">
+
+    <!-- Aos Link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- External Css -->
+    <link rel="stylesheet" href="../reservepage/css/reservepage.css" type="text/css">
+</head>
+<body>
+
+<!-- NavBar -->
+
+<nav class="navbar navbar-light bg-light sticky-top " id="all-colors">
+    <div class="container">
+        <button class="navbar-toggler order-1 order-lg-0 order-md-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
+        
+        <a class="navbar-brand fs-6 d-flex align-items-center fw-bolder order-0 order-lg-1  " href="#">
+            <img src="../logo/logo.png" alt="" width="50" height="50" >
+            The Chocolate Room
+        </a>
+        <a class="order-lg-2" id="menu-btn" href="../reservepage/reserve.html">Reserve a Table</a>
+        <!-- <button type="button" class="btn btn-outline-secondary order-lg-2" id="menu-btn">Reserve a Table</button> -->
+    </div>
+</nav>
+
+<div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-light position-absolute text-center " id="menu" >
+        <a href="../homePage/home.html" id="menu-btn-toggle">Home</a>
+        <a href="../menuPage/menupage.html" id="menu-btn-toggle" target="_blank">Menu</a>
+        <a href="../blog/blog.html" id="menu-btn-toggle" target="_blank">Blog</a>
+        <a href="../careers/careers.html" id="menu-btn-toggle" target="_blank">Careers</a>
+        <a href="../aboutPage/aboutus.html" id="menu-btn-toggle" target="_blank">About Us</a>
+        <a href="../ShoppingKart/shoppingkart.html" id="menu-btn-toggle" target="_blank">Shopping Kart</a>
+        <hr>
+        
+        <!-- Split dropend button -->
+        <div class="btn-group dropend ">
+            <button type="button" class="btn btn-light text-warning  shadow-none ">Profie</button>
+            <button type="button" class="btn btn-light  dropdown-toggle dropdown-toggle-split shadow-none" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropright</span></button>
+            <ul class="dropdown-menu">
+                <!-- Dropdown menu links -->
+                <img class="rounded-pill mx-2 " src="../profile/medium-shot-smiley-man-posing.jpg" alt="" width="30" height="24"><a href="../profile/profile.html">Profile</a>
+                <hr>
+                <div class=" d-flex flex-column mt-2 ">
+                    <a class="py-1 px-2 " href="../loginPage/login.html">Sign-In</a>
+                    <a class="p-2 " href="#">Sign-Out</a>
+                </div>
+            </ul>
+        </div>
+        <hr>
+            <a href="../reservepage/reserveDark.html"><i class='bx bxs-brightness'></i> Switch to Dark mode</a>
+    </div>
+</div>
+<!-- NavBar Ends -->
+
+
+    <div class="container my-0  my-md-5" id="top">
+        <h6>Step: 01</h6>
+        <div  data-aos="zoom-in" data-aos-duration="1500" class="row d-flex justify-content-center align-items-center ">
+            <div class="col-12 col-md-12  col-lg-8 my-0 ">
+                <h5 class="card-title fs-3 fw-bolder text-capitalize text-center text-dark my-4 my-md-0">Let us <span class="text-warning px-2 bg-dark">serve</span> you <span class="text-warning bg-dark px-2">better</span></h5>
+                <p class="my-2 text-center">Don’t wait in a line to enjoy your meal. Reserve a table in advance with us.</p>
+
+                <form class="row my-0 my-md-0  g-3 p-0 p-lg-4" id="form">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <div class="form-controll">
+                            <label for="full-name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="full-name" placeholder="Enter Full Name"><span></span>
+                            <small>invalid</small>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <div class="form-controll">
+                            <label for="mail" class="form-label">E-Mail</label>
+                            <input type="text" class="form-control" placeholder="Enter your mail" id="mail" aria-describedby="inputGroupPrepend">
+                            <small>invalid</small>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <div class="form-controll">
+                            <label for="contact-number" class="form-label">PhoneNumber</label>
+                            <input type="text" class="form-control" placeholder="Enter your number" id="contact-number">
+                            <small>invalid</small>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <div class="form-controll">
+                            <label for="address">Address</label>
+                            <textarea class="form-control" placeholder="Enter Address" id="address"></textarea>
+                            <small>invalid</small>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 mt-0">
+                        <label for="gender" class="form-label">Available Time Slots</label>
+                        <select class="form-select" id="gender">
+                            <option selected disabled value="">Evening Only</option>
+                            <option>06.00PM</option>
+                            <option>06.30PM</option>
+                            <option>06.55PM</option>
+                            <option>07.00PM</option>
+                            <option>07.30PM</option>
+                            <option>07.55PM</option>
+                            <option>08.00PM</option>
+                            <option>08.45PM</option>
+                            <option>08.50PM</option>
+                        </select>
+                    </div>
+
+                    <!-- <div class="col-12 col-md-6 col-lg-6 mt-4 mt-md-1">
+                        <div class="form-controll">
+                            <label class="mb-1 " for="members" class="floatingTextarea">Type Members</label>
+                            <input type="number" class="form-control" placeholder="Enter members" id="members">
+                            <small>invalid</small>
+                        </div>
+                    </div> -->
+
+                    <div class="col-12 col-md-6 col-lg-6 mt-4 mt-md-1">
+                        <label for="date" class="form-label mb-1">Choose Date</label>
+                        <input type="date" value="26-03-2024" class="form-control" placeholder="Enter your number" id="date">
+                    </div>
+
+                    <div class="col-12 d-md-flex justify-content-between   px-3 mt-4">
+                        <div class="col-12 col-md-8 col-lg-8">
+                            <p class="">Allow your Location : <button type="button" onclick="findMyState()" class="btn btn-outline-warning">Click-Here</button></p>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4">
+                            <small class="status mt-0 text-warning text-capitalize"></small>
+                        </div>
+                    </div>
+
+                    <!-- plans -->
+                    <div class="container d-md-flex my-2  my-md-4">
+                        <div class="col-12 col-md-6 my-2 my-md-0 form-check d-md-flex justify-content-center align-items-center">
+                            <input class="form-check-input" onclick="usrPriceNonPush()" type="radio" name="flexRadioDefault" id="plans">
+                            <label class="form-check-label fs-6 fw-bold " for="plans"><span id="plansName">Non-Veg Buffet Per Head</span><span>₹</span><span id="user-price">765</span></label>
+                        </div>
+                        <div class="col-12 col-md-6 my-2 my-md-0 form-check d-md-flex justify-content-center align-items-center">
+                            <input class="form-check-input " onclick="usrPriceVegPush()" type="radio" name="flexRadioDefault" id="plans1">
+                            <label class="form-check-label fs-6 fw-bold"  for="plans1"><span id="plansName1">Veg Buffet Per Head</span><span>₹</span><span id="user-price1">559</span></span></label>
+                        </div>
+                    </div>
+                    <!-- ends -->
+
+                    <div class="col-12 col-md-6 mb-0 mb-lg-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="radio-button" >
+                            <label class="form-check-label" for="radio-button">Agree to terms and conditions</label>
+                        </div>
+                    </div>
+                    <div class="col-12 p-0  my-4  my-lg-3">
+                        <button class="btn btn-warning w-100 p-2" onclick="usrPricePush()" type="submit">Submit form</button>
+                    </div>
+                </form>
+            </div>    
+        </div>
+    </div>
+    <!-- Ends -->
+
+    <!-- itemstoCart -->
+    <div class="container">
+        <h6>Step: 02</h6>
+    </div>
+    <div class="container my-0  my-md-2 my-md-5 pb-3 " id="items-to-cart">
+        <div class="row">
+            <div id="items-to-cart" class="col-12 mt-0  mt-md-4 mt-md-0 bg-light text-dark text-light d-flex justify-content-between align-items-center py-2 px-0 ">
+                <h6 class="kart text-light fw-bolder ms-md-2 pt-1 " id="content-name"></h6>
+                <div class="buttons bg-light text-dark kart">
+                    <span class="m-0  mx-md-2 px-1  bg-warning  text-dark " id="default-price"></span>
+                    <button class="border-0 " onclick="decreament()"><i class='bx bx-minus'></i></button>
+                    <span class="border-0 px-1  text-dark bg-warning" id="qnty">0</span>
+                    <button class="border-0 " onclick="increament()"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+            <hr style="color: white;">
+            <div class="col-12 my-2">
+                <button type="button" onclick="deleteTag()" class="btn btn-outline-warning ms-2 ">Clear</button>
+            </div>
+        </div>
+    </div>
+    <!-- ends -->
+
+    <!-- billingSec -->
+    <div class="container text-warning fw-bolder   p-md-4" id="items-to-cart">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-between  align-items-center">
+                <p id="item-tot">Item Total</p>
+                <p id="item-total" class="text-light bg-dark   p-md-1"></p>
+            </div>
+            <div class="col-12 d-flex justify-content-between  align-items-center">
+                <p>Handling Fee</p>
+                <p id="delivery-fee" class="text-light bg-dark p-0  p-md-1">25</p>
+            </div>
+            <div class="col-12 d-flex justify-content-between  align-items-center">
+                <p>GST and Restaurant Charges 5%</p>
+                <p id="gst-bill" class="text-light bg-dark p-0  p-md-1"></p>
+            </div>
+            <hr>
+            <div class="col-12 d-flex justify-content-between  align-items-center">
+                <p>Total</p>
+                <p id="total" class="text-light bg-dark p-0 p-md-1"></p>
+            </div>
+        </div>
+    </div>
+    <!-- Ends -->
+
+    <!-- pay button -->
+    <div class="container ">
+        <div class="col-12 p-0 m-0 my-2 text-center">
+            <a href="https://business.paytm.com/upi" onclick="payTag()" target="_blank"><button type="button"  class="btn btn-outline-warning w-75">Pay Using Upi</button></a>
+        </div>
+    </div> 
+    <!-- ends -->
+
+    <!-- pay via online -->
+    <div class="container my-5 ">
+        <h6>Step: 03</h6>
+        <h2 class="fw-bold text-capitalize text-center">Scan Qr Code</h2>
+        <div data-aos="flip-left" data-aos-duration="1500" class="col-12 d-flex justify-content-center align-content-center my-5 ">
+            <img id="qrCodeScanner" src="../reservepage/img/WhatsApp Image 2024-01-26 at 22.31.36_f5039f6d.jpg" alt="" height="300" width="200">
+        </div>          
+    </div>
+
+
+    <!-- Newsletter -->
+<div data-aos="flip-up" data-aos-duration="1500" class="container">
+    <div class="row">
+        <div class="col-12 col-lg-7 my-lg-5 ">
+            <h5 class="my-4 my-lg-4" id="newsletter">SUBSCRIBE <span class="text-warning ">TO</span> NEWSLETTER</h5>
+            <h2>Satisfaction is having more of soup</h2>
+            <h2>Find the Tastiest dishes.</h2>
+        </div>
+        <div class="col-12 col-lg-5 my-4 my-lg-5">
+            <form class="d-flex my-lg-5 " id="searchBox">
+                <input class="form-control me-2 rounded-pill" type="search" placeholder="Your email address..." aria-label="Search">
+                <button class="btn btn-outline-warning rounded-pill" type="submit">Subscribe</button>
+              </form>
+        </div>
+    </div>
+</div>
+<!-- Ends -->
+
+
+<!-- top redirect -->
+<div class="container-fluid">
+    <div class="topReach">
+        <a href="#top"><i class='bx bxs-chevrons-up'></i></a>
+    </div>
+</div>
+<!-- Ends -->
+
+<!-- footer-block-images -->
+<div class="col">
+    <h4 class="fw-bolder group-1-of-imgs foot-img-text-content">The Choclate Room<span class="text-warning ">.</span></h4>
+    <p class="fw-bold group-2-of-imgs foot-img-text-content">Enjoy the <span class="text-warning fw-bolder" >Moments</span> With Us</p>
+</div>
+<div class="container my-lg-5 ">
+  <div class="col-12 d-flex align-items-center ">
+      <img class="remaining-foot-img order-md-0" src="../footer-img/top-view-chocolate-tart-slate.jpg" alt="" width="175" height="120">
+      <img class="remaining-foot-img order-md-2 order-lg-1" src="../footer-img/plateau-with-sweet-cupcake-desserts-with-frosting-top.jpg" alt="" width="175" height="120">
+      <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="remaining-foot-img order-md-1 order-lg-2 " src="../footer-img/3d-delicious-burger-with-excited-man.jpg" alt="" width="320" height="190">
+      <img class="foot-last-before-img-disabled-low-size order-lg-3" src="../footer-img/dark-chocolate-dessert-wooden-table-indulgence-generated-by-ai.jpg" alt="" width="175" height="120">
+      <img class="foot-last-before-img-disabled-low-size order-lg-4"src="../footer-img/indulgent-homemade-chocolate-brownie-with-fudge-sauce-generated-by-ai.jpg" alt="" width="175" height="120">
+      <img class="foot-last-img-disabled-low-size order-lg-5" src="../footer-img/fresh-gourmet-meal-beef-taco-salad-plate-generated-by-ai.jpg" alt="" width="175" height="120"> 
+  </div>
+</div>
+<!-- Ends -->
+
+
+<!-- Footer -->
+<div class="container-fluid my-3 mt-lg-5  bg-secondary" id="foot-color">
+    <div class="row  ">
+        <div class="mt-3 col-lg-6 ">
+            <h3>The ChocoLate Room<span id="The-chocolate-span">.</span></h3>
+            <p class="fw-normal my-0 ">A Culinary Haven Where diverse flasvors and warm hospitality come together, creating a symhony of delicious memories.</small>
+        </div>
+        <div class="mt-3 col-lg-3 ">
+            <h3 class="">Address</h3>
+            <small><span><ion-icon name="book-outline"></ion-icon> </span>B 426, 427 Sobo Centre, South Bbopal, Ahmdabad-380058, Gujarat, India.</small>
+        </div>
+        <div class="mt-3 d-flex flex-column col-lg-3 ">
+            <h3 class="mb-3">contact Us</h3>
+            <small class=""><span><ion-icon name="call-outline"></ion-icon> </span>Ph : +91-02717-400005</small>
+            <small class=""><span><ion-icon name="mail-unread-outline"></ion-icon> </span><a href="mailto:mailto:info@thechocolateroom.com.viet">info@thechocolateroom.com.viet</a></small>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class=" d-flex justify-content-start align-items-center col-lg-7">
+            <a href="https://www.facebook.com/TheChocolateRoomIndia/?ref=ts"><i class='bx bxl-meta border-0 rounded-pill p-2 border-dark' id="links-meta-icon"></i></a>
+            <a href="https://www.instagram.com/thechocolateroomin/"><i class='bx bxl-instagram border-0  rounded-pill p-2 border-dark mx-2' id="links-insta-icon"></i></a>
+            <a href="https://twitter.com/TCRindia"><i class='bx bxl-twitter border-0  rounded-pill p-2 border-dark mx-2 ' id="links-twitter-icon"></i></a>
+            <a href="#"><i class='bx bxl-pinterest-alt border-0 rounded-pill p-2 border-dark mx-2 ' id="links-pintrest-icon"></i></a>
+        </div>
+
+        <!-- copy-right -->
+        <div class="col col-lg-5 text-lg-center ">
+            <p class="copy-right fs-6">2024 <span id="copyrights">&copy;</span> The Chocolate Room<span id="The-chocolate-span">.</span> All rights reserved. </p>
+        </div>
+    </div>
+</div>
+<!-- Ends -->
+  
+
+<!-- Icons Import -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<!-- Import Script -->
+<Script src="../Links/js/bootstrap.bundle.min.js"></Script>
+
+<!-- Aos -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- External Scirpt -->
+<script src="../reservepage/js/reserve.js"></script>
+
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #212529!important;
+    color: beige!important;
+}
+a{
+    color:orange;
+    text-decoration: none;
+}
+a:hover{
+    color: brown;
+    text-decoration: solid;
+}
+a:active{
+    color: rgb(122, 15, 15);
+}
+
+/* All chocolate room  */
+#The-chocolate-span{
+    font-size: 2rem;
+    color: orange;
+}
+
+/* content nav bar responsive */
+#menu-btn{
+    display: none;
+    color: orange;
+    border: none;
+}
+#menu-btn:hover{
+    color: black;
+    background-color: transparent;
+    border-radius: 30%;
+    transition: 1s ease-in-out;
+}
+#menu-btn-toggle{
+    display: grid;
+    padding: 3vh 0;
+    letter-spacing: .06rem;
+}
+#menu{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    min-height: 400px;
+    height: 90vh;
+}
+/* ends */
+#items-to-cart{
+    background: url(../images/9175082_6447.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment :fixed;
+}
+
+/* Group of Images */
+.group-1-of-imgs{
+    position: absolute;
+    z-index: 1000;
+    right: 350px;
+    top: 2360px
+}
+.group-2-of-imgs{
+    position: absolute;
+    z-index: 1000;
+    left: 160px;
+    top: 2530px
+}
+/* ends */
+
+
+
+/* Newsletter */
+/* searchBox */
+.form-control{
+    border-color: orange;
+}
+.form-control::placeholder{
+    color: rgb(104, 70, 9);
+}
+.form-control:focus{
+    box-shadow: 0 0 0 0.20rem rgba(226, 161, 39,.4);
+    border: none;
+}
+.btn-outline-success{
+    color: rgb(104, 70, 9);
+    border-color: orange;
+}
+button:hover{
+    color: rgb(104, 70, 9);
+}
+
+#newsletter{
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+/* ends */
+
+/* top - reach */
+.topReach i{
+    padding: 10px;
+    color: red;
+    cursor:grab;
+    font-size: 2rem;
+    position: absolute;
+    z-index: 200;
+    left: 0;
+}
+.topReach i:hover{
+    color: black;
+    background-color: #feda75;
+    border-radius: 40px;
+}
+/* ends */
+
+/* footer icons */
+#links-meta-icon{
+    color:black
+}
+#links-meta-icon:hover{
+    color: white;
+    background:linear-gradient(90deg ,#1f66e5,#3676e8,#4d85ea,#6495ed,#7ba5f0,#92b4f2,#a9c4f5);
+}
+#links-insta-icon{
+    color:black;
+}
+#links-insta-icon:hover{
+    color: white;
+    background:linear-gradient(90deg ,#feda75,  #fa7e1e,  #d62976, #962fbf, #4f5bd5);
+}
+#links-twitter-icon{
+    color: black;
+}
+#links-twitter-icon:hover{
+    color: white;
+    background:linear-gradient(90deg ,#2ca1ee,#41aaef, #56b3f1,#6bbdf3,#80c6f4,#95d0f6);
+    
+}
+#links-pintrest-icon{
+    color: black;
+}
+#links-pintrest-icon:hover{
+    color: white;
+    background:linear-gradient(90deg ,#f44336,#f5554a,#f6685e,#f77b72,#f44336,#f44336,#f44336);
+}
+/* Ends */
+
+/* copyright */
+#copyrights{
+    color: orange;
+}
+/* ends */
+
+/* ------custom scrollbar------- */
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(120deg,#642bff,black, #ff22e6,red);
+    border-radius: 10px;
+}
+/* ends */
+
+/* Media Query for navBar, Partners section,  */
+@media screen and (min-width:768px) {
+    #menu-btn{
+        display: grid;
+    }
+    .starters-dot{
+        font-size: 1.5rem;
+        letter-spacing: 9px;
+    }
+    #video-about-sec{
+        width: 70%!important;
+    }
+    /* #about-firstspec-sec-head-img{
+        display: none !important;
+    } */
+    /* #menu-btn-toggle{
+        display: none;
+    } */
+    #partnersAd img{
+        width: 190px;
+    }
+    .group-1-of-imgs{
+        display: none;
+    }
+    .group-2-of-imgs{
+        display: none;
+    }
+}
+@media screen and (max-width:767px){
+    #about-sec-head-img{
+        display: none !important;
+    }
+    #about-firstspec-sec-head-img{
+        display: none !important;
+    }
+    .foot-img-text-content{
+        display: none;
+    }
+    .remaining-foot-img{
+        display: none;
+    }
+    .blog-first-two-img img{
+        width: 320px;
+    }
+}
+@media screen and (max-width:1023px){
+    #about-firstspec-sec-head-img{
+        display: none !important;
+    }
+    .foot-last-before-img-disabled-low-size {
+        display: none;
+    }
+    
+}
+@media screen and (max-width:1024px) {
+    .foot-last-img-disabled-low-size{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .group-1-of-imgs{
+        display: flex;
+    }
+    .group-2-of-imgs{
+        display: flex;
+    }
+}
+/* @media screen and (max-width :1440px){
+    .group-1-of-imgs{
+        display: none;
+    }
+    .group-2-of-imgs{
+        display: none;
+    }
+}
+@media screen and (max-width : 2560px){
+    .group-1-of-imgs{
+        display: none;
+    }
+    .group-2-of-imgs{
+        display: none;
+    }
+} */

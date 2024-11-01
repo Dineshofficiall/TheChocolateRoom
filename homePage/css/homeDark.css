@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #212529!important;
+    color: beige!important;
+}
+a{
+    color:orange;
+    text-decoration: none;
+}
+a:hover{
+    color: brown;
+    text-decoration: solid;
+}
+a:active{
+    color: rgb(122, 15, 15);
+}
+
+/* All chocolate room  */
+#The-chocolate-span{
+    font-size: 2rem;
+    color: orange;
+}
+
+/* content nav bar responsive */
+#menu-btn{
+    display: none;
+    color: orange;
+    border: none;
+}
+#menu-btn:hover{
+    color: black;
+    background-color: transparent;
+    border-radius: 30%;
+    transition: 1s ease-in-out;
+}
+#menu-btn-toggle{
+    display: grid;
+    padding: 3vh 0;
+    letter-spacing: .06rem;
+}
+#menu{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    min-height: 400px;
+    height: 90vh;
+}
+/* ends */
+
+
+/* Header text space */
+#header-text-space{
+    word-spacing: 20px;
+    letter-spacing: 3px;
+}
+#header-text-space::first-letter{
+    font-size: 4rem;
+    color: orange;
+}
+
+/* searchBox 1st content */
+.form-control{
+    border-color: orange;
+}
+.form-control::placeholder{
+    color: rgb(104, 70, 9);
+}
+.form-control:focus{
+    box-shadow: 0 0 0 0.20rem rgba(226, 161, 39,.4);
+    border: none;
+}
+.btn-outline-success{
+    color: rgb(104, 70, 9);
+    border-color: orange;
+}
+button:hover{
+    color: rgb(104, 70, 9);
+}
+/* Ends */
+
+    /* .dark-light-mode{
+        position: absolute;
+        z-index: 200;
+        right: 0;
+        top: 100px;
+    } */
+
+/* Cards-Hover */
+.cards{
+    transition: all .5s ease-in-out;
+}
+.cards:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 10px orange;
+}
+/* Ends */
+
+/*Trending Products card Name Rating */
+.name-rating{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+/* ends */
+
+/* footer icons */
+#links-meta-icon{
+    color:black
+}
+#links-meta-icon:hover{
+    color: white;
+    background:linear-gradient(90deg ,#1f66e5,#3676e8,#4d85ea,#6495ed,#7ba5f0,#92b4f2,#a9c4f5);
+}
+#links-insta-icon{
+    color:black;
+}
+#links-insta-icon:hover{
+    color: white;
+    background:linear-gradient(90deg ,#feda75,  #fa7e1e,  #d62976, #962fbf, #4f5bd5);
+}
+#links-twitter-icon{
+    color: black;
+}
+#links-twitter-icon:hover{
+    color: white;
+    background:linear-gradient(90deg ,#2ca1ee,#41aaef, #56b3f1,#6bbdf3,#80c6f4,#95d0f6);
+    
+}
+#links-pintrest-icon{
+    color: black;
+}
+#links-pintrest-icon:hover{
+    color: white;
+    background:linear-gradient(90deg ,#f44336,#f5554a,#f6685e,#f77b72,#f44336,#f44336,#f44336);
+}
+/* Ends */
+
+/* copyright */
+#copyrights{
+    color: orange;
+}
+/* ends */
+
+/* img-radius */
+#img-rad img{
+    border-radius: 30px !important;
+}
+/* ends */
+
+/* ------custom scrollbar------- */
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(120deg,#642bff,black, #ff22e6,red);
+    border-radius: 10px;
+}
+/* ends */
+
+/* Media Query for navBar, Partners section,  */
+@media screen and (min-width:768px) {
+    #menu-btn{
+        display: grid;
+    }
+    /* #menu-btn-toggle{
+        display: none;
+    } */
+    #partnersAd img{
+        width: 190px;
+    }
+}
+@media screen and (max-width:768px){
+    #right-block{
+        display: none;
+    }
+}
+

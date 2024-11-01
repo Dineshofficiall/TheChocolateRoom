@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Chocolate Room</title>
+
+    <!-- tabicon -->
+    <link rel="icon" type="image/x-icon" href="../title/cup_2935413.png">
+
+    <!-- boxicons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Import Css -->
+    <link rel="stylesheet" href="../Links/css/bootstrap.min.css" type="text/css">
+
+    <!-- Aos Link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- External Css -->
+    <link rel="stylesheet" href="./css/homePage.css" type="text/css">
+</head>
+<body>
+
+    <!-- NavBar -->
+
+    <nav class="navbar navbar-light sticky-top" id="all-colors">
+        <div class="container">
+            <button class="navbar-toggler order-1 order-lg-0 order-md-0 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+            
+            <a class="navbar-brand fs-6 d-flex align-items-center fw-bolder order-0 order-lg-1  " href="#">
+                <img src="../logo/logo.png" alt="" width="50" height="50" >
+                The Chocolate Room
+            </a>
+            <button type="button" class="btn btn-outline-secondary order-lg-2" id="menu-btn">
+                <a href="../reservepage/reserve.html">Reserve a Table</a>
+            </button>
+        </div>
+    </nav>
+
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class=" position-absolute text-center all-colors1" id="menu" >
+            <a class="text-dark fw-bolder " href="../homePage/home.html" id="menu-btn-toggle">Home</a>
+            <a class="text-dark fw-bolder " href="../menuPage/menupage.html" id="menu-btn-toggle" target="_blank">Menu</a>
+            <a class="text-dark fw-bolder " href="../blog/blog.html" id="menu-btn-toggle" target="_blank">Blog</a>
+            <a class="text-dark fw-bolder " href="../careers/careers.html" id="menu-btn-toggle" target="_blank">Careers</a>
+            <!-- <a href="../contactUs/contact.html" id="menu-btn-toggle" target="_blank">Contact Us</a> -->
+            <a class="text-dark fw-bolder " href="../aboutPage/aboutus.html" id="menu-btn-toggle" target="_blank">About Us</a>
+            <a class="text-dark fw-bolder " href="../ShoppingKart/shoppingkart.html" id="menu-btn-toggle" target="_blank">Shopping Kart</a>
+            <hr>
+            
+            <!-- Split dropend button -->
+            <div class="btn-group dropend ">
+                <button type="button" class="btn btn-dark  text-light  fw-bolder  shadow-none ">Profie</button>
+                <button type="button" class="btn btn-dark  dropdown-toggle dropdown-toggle-split shadow-none" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropright</span></button>
+                <ul class="dropdown-menu text-dark fw-bolder all-colors1">
+                    <!-- Dropdown menu links -->
+                    <img class="rounded-pill mx-2" src="../profile/medium-shot-smiley-man-posing.jpg" alt="" width="30" height="24"><a href="../profile/profile.html">Profile</a>
+                    <hr>
+                    <div class=" d--flex flex-column mt-2 ">
+                        <a class="text-dark fw-bolder py-1 px-2 " href="../sign-in/sign-in.html">Sign-In</a>
+                        <a class="text-dark fw-bolder p-2 " href="#">Sign-Out</a>
+                    </div>
+                </ul>
+            </div>
+            <hr class="text-light ">
+            <a class="text-dark fw-bolder " href="../homePage/homeDark.html"><i class='bx bxs-brightness'></i> Switch to DarkMode</a>
+            <!-- <button type="button" onclick="darkLight()" class="btn btn-outline-secondary"><i class='bx bxs-brightness'></i></button> -->
+        </div>
+    </div>
+    <!-- NavBar Ends -->
+
+    <div class="">
+        
+    </div>
+
+    <!-- First Main Content -->
+    <div class="container my-lg-5" id="top">
+        <div class="row">
+            <!-- Left Block -->
+            <div data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-sine" class="col-12 col-lg-6 my-2 ">
+                <div class="content">
+                    <h4 class="p-2">The Chocolate Room<span id="The-chocolate-span">.</span></h4>
+                    <div class="content-img p-1">
+                        <h1 class="p-2 fw-bolder" id="header-text-space">Taste<img class="rounded-pill m-2 " src="../homePage/header Img/flame-grilled-meat-cooking-flames-generative-ai.jpg" alt="" width="110" height="60">Flavors from Around the <img class="rounded-pill mx-2 my-3 " src="../homePage/header Img/dark-chocolate-truffles-gourmet-collection-generated-by-ai.jpg" alt="" width="110" height="60">World</h1>
+                    </div>
+                    <div class="small-content p-2">
+                        <small><strong>House Kitchen : </strong>Where Culinary execellence meets a symphony of flavors. Creating a harmonious dining experience for every palete.</small>
+                    </div>
+                </div>
+                <div class="container my-3">
+                    <form class="d-flex" id="searchBox">
+                        <input class="form-control me-2 rounded-pill" type="search" placeholder="Search Anything..." aria-label="Search">
+                        <button class="btn btn-outline-warning rounded-pill" type="submit"><ion-icon name="search-outline"></ion-icon></button>
+                    </form>
+                </div>           
+            </div>
+
+            <!-- Right Block -->
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="col-12 col-lg-6 p-2" id="right-block">
+                <!-- <p>inner block</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim iure quidem vel natus nam, quas cum quos similique quisquam incidunt, consequatur illo distinctio dicta harum cupiditate impedit quasi cumque non.</p> -->
+                
+                <!-- first section for two images aligning -->
+                <div class="col-12 d-flex">
+                    <div class="col-6 d-flex justify-content-end align-items-end " id="img-rad">
+                        <img src="../temppics/_5f999423-16ff-4b13-8d22-fb885a1265ba.jpeg" alt="" width="160" height="90">
+                    </div>
+                    <div class="col-6 d-flex justify-content-center" id="img-rad">
+                        <img src="../temppics/_b335f6b9-bb36-4ca1-ba65-4cc9952c5a1a.jpeg" alt="" width="210" height="130">
+                    </div>
+                </div>
+                <!-- ends -->
+
+                <!-- Second section contains four images -->
+                <!-- right column and right column two big images -->
+                <!-- left contains two images -->
+                <div class="row my-2 ">
+                    <div class="col-4 d-flex flex-column justify-content-between align-items-end " id="img-rad">
+                        <div class="col ">
+                            <img src="../temppics/chocolate-brownie-cake-with-scoop-ice-cream.jpg" alt="" width="130" height="90">
+                        </div>
+                        <div class="col ">
+                            <img class="my-4 " src="../temppics/delicious-burger-with-fresh-ingredients.jpg" alt="" width="140" height="220">
+                        </div>
+                    </div>
+                    <div class="col-8 d-flex flex-column " id="img-rad">
+                        <img class="my-3 " src="../temppics/delicious-dessert-table.jpg" alt="" width="300" height="180">
+                        <div class="col">
+                            <img class="my-1 ms-4 d-flex justify-content-end align-items-center " src="../temppics/delicious-pizza-indoors.jpg" style="object-fit: cover;" width="320" height="120" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- First Content Ends -->
+
+    <!-- Second Content Starts - Trending Products-->
+    <div class="container mt-5 ">
+        <div class="col bg-transparent  p-2">
+            <h6>The Chocolate Room<span id="The-chocolate-span">.</span></h6>
+            <h2>Popular Dishes</h2>
+            <hr>
+        </div>
+        <div  data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="row g-4 my-3  ">
+            <div class="col col-12 rounded-1 col-lg-3 col-md-6 ">
+                <div class="card border-0 cards" >
+                    <img src="../homePage/popular/_5f999423-16ff-4b13-8d22-fb885a1265ba.jpeg" style="object-fit: cover;" height="180px" class="card-img-top" alt="...">
+                    <div class="card-body border-0">
+                        <div class="name-rating">
+                            <h5 class="card-title ">Brownie</h5>
+                            <button type="button" class="btn btn-outline-success p-0 px-1"><ion-icon name="star-sharp"></ion-icon><ion-icon name="star-sharp"></ion-icon><ion-icon name="star-sharp"></ion-icon><ion-icon name="star-sharp"></ion-icon><ion-icon name="star-half-sharp"></ion-icon></button>
+                        </div>
+                        <p class="card-text mt-2 py-1 ">Special | Veg | Serve for one</p>
+                        <div class="kart d-flex justify-content-between align-items-center">
+                            <small class="price fw-bolder ">₹320</small>
+                            <button type="button" class="btn btn-outline-secondary fw-bolder rounded-pill ">Add to cart</button>
+                        </div>
+                        <hr>
+                        <small class="w-25 offers-display text-light bg-primary px-1 rounded-pill" >10% off</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-12 rounded-1 col-lg-3 col-md-6 border-0">
+                <div class="card border-0 cards">
+                  <img src="../homePage/popular/delicious-dessert-table.jpg" height="180px" style="object-fit: cover;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="name-rating">
+                            <h5 class="card-title">Choco-Bomb</h5>
+                            <button type="button" class="btn btn-outline-success p-0 px-1"><ion-icon name="star-sharp"></ion-icon><ion-icon name="star-sharp"></ion-icon><ion-icon name="star-sharp"></ion-icon><ion-icon name="star-sharp"></ion-icon><ion-icon name="star-half-sharp"></ion-icon></button>
+                        </div>
+                        <p class="card-text mt-2 py-1 ">Special | veg | Serve for Two</p>
+                        <div class="kart d-flex justify-content-between align-items-center">
+                            <small class="price fw-bolder ">₹220</small>
+                            <button type="button" class="btn btn-outline-secondary fw-bolder rounded-pill ">Add to cart</button>
+                        </div>
+                        <hr>
+                        <small class="w-25 offers-display text-light bg-primary px-1 rounded-pill" >10% off</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-12 rounded-1 col-lg-3 col-md-6 border-0">
+                <div class="card border-0 cards">
+                  <img src="../homePage/popular/delicious-burger-with-fresh-ingredients.jpg" style="object-fit: contain;" height="180px" class="card-img-top" alt="...">
+                  <div class="card-body border-0">
+                      <div class="name-rating">
+                          <h5 class="card-title ">Mechic burger</h5>
+                          <button type="button" class="btn btn-outline-success p-0 px-1"><ion-icon name="star-sharp"></ion-icon><ion-icon name="star-sharp"></ion-icon><ion-icon name="star-sharp"></ion-icon><ion-icon name="star-sharp"></ion-icon><ion-icon name="star-half-sharp"></ion-icon></button>
+                      </div>
+                      <p class="card-text mt-2 py-1 ">Dish | N-Veg | Serve for Two</p>
+                      <div class="kart d-flex justify-content-between align-items-center">
+                          <small class="price fw-bolder ">₹250</small>
+                          <button type="button" class="btn btn-outline-secondary fw-bolder rounded-pill ">Add to cart</button>
+                      </div>
+                      <hr>
+                      <small class="w-25 offers-display text-light bg-primary px-1 rounded-pill" >10% off</small>
+                  </div>
+                </div>
+            </div>
+            <div class="col col-12 rounded-1 col-lg-3 col-md-6 border-0">
+                <div class="card border-0 cards">
+                    <img src="../homePage/popular/delicious-pizza-indoors.jpg" height="180px" style="object-fit: cover;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="name-rating">
+                            <h5 class="card-title">Semizza</h5>
+                            <button type="button" class="btn btn-outline-success p-0 px-1"><ion-icon name="star-sharp"></ion-icon><ion-icon name="star-sharp"></ion-icon><ion-icon name="star-sharp"></ion-icon><ion-icon name="star-sharp"></ion-icon><ion-icon name="star-half-sharp"></ion-icon></button>
+                        </div>
+                        <p class="card-text mt-2 py-1 ">Dish | Veg | Serve for Two</p>
+                        <div class="kart d-flex justify-content-between align-items-center">
+                            <small class="price fw-bolder ">₹320</small>
+                            <button type="button" class="btn btn-outline-secondary fw-bolder rounded-pill ">Add to cart</button>
+                        </div>
+                        <hr>
+                        <small class="w-25 offers-display text-light bg-primary px-1 rounded-pill" >10% off</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Supportive Brands -->
+    <div data-aos="flip-down" data-aos-duration="1500" class="container mt-0 mt-lg-5  my-4 mb-lg-4">
+        <div class="row">
+            <div class="text-thanks">
+                <h4 class="text-center ">Officially Partners</h4>
+                <hr>
+            </div>
+            <div class="col d-flex justify-content-evenly  align-items-center" id="partnersAd">
+                <img src="../logo/burger-king-logo-3274.png" width="100" class="img-thumbnail bg-transparent  border-0" alt="...">
+            
+                <img src="../logo/dominos-logo-4168.png" width="100" class="img-thumbnail bg-transparent  border-0 " alt="...">
+            
+                <img src="../logo/mcdonalds-png-logo-2772.png" width="100" class="img-thumbnail bg-transparent  border-0 " alt="...">
+            </div>
+        </div>
+    </div>
+    <!-- Ends -->
+
+    <!-- Business Ideas -->
+    <section  class="container my-lg-3 ">
+        <div class="row">
+            <h2 class="text-center my-2 my-lg-3 ">Franchise Ideas</h2>
+            <hr>
+        </div>
+        <div class="row text-center ">
+            <h3 class="mt-xxl-4">Why The Chocolate Room<span id="The-chocolate-span">.</span></h3>
+            <p class="my-3 display-0">The Chocolate Room product sells itself. Years of brand recognition, exclusive award winning recipes, customer loyalty, superior business concepts and revenue expanding opportunities are what you get as The Chocolate Room franchisee.</p>
+        </div>
+    </section>
+    <div data-aos="zoom-in-down" data-aos-duration="1000" class="container">
+        <div class="row my-2 text-center ">
+            <div class="col-12 col-md-6 col-lg-3  border-0 ">
+            <img src="../homePage/businessIdeas/pile-coins-forming-graph.jpg" class="card-img-top  rounded-pill p-2 " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Low Investement</h5>
+                    <small class="card-text display-0">The Chocolate Room’s unique business model delivers high margin with a minimum investment, taking your business to a whole new level.</small>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 border-0 ">
+            <img src="../homePage/businessIdeas/collage-finance-banner-concept.jpg" class="card-img-top rounded-pill p-2 " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Good ROI</h5>
+                    <small class="card-text display-0">The Chocolate Room’s unique business model delivers high margin with a minimum investment, taking your business to a whole new level.</small>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 border-0 ">
+            <img src="../homePage/businessIdeas/standard-quality-control-collage.jpg" class="card-img-top rounded-pill p-2 " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Recognized Brand</h5>
+                    <small class="card-text display-0 ">Our franchise model yields good return on investment at a faster level. Thus, delivering guaranteed and greater profits.</small>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 border-0">
+                <img src="../homePage/businessIdeas/team-teamwork-collaboration-connection-unity-concept.jpg" class="card-img-top rounded-pill p-2" height="175" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Franchise Support</h5>
+                <small class="card-text display-0 ">We are a trusted and loved brand that is sweetly associated and well-known among chocoholic circles everywhere.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ends -->
+
+    <!-- Recently Opened -->
+    <section class="container my-lg-5">
+        <div class="row">
+            <h2 class="text-center">Recently Opened</h2>
+            <hr>
+        </div>
+    </section>
+    <div data-aos="zoom-in-down" data-aos-duration="1600" class="container mb-lg-5">
+        <div class="row my-3 text-center">
+            <div class="card col-md-6 col-lg-4 border-0 bg-transparent ">
+            <img src="../homePage/showrooms/ASHRAM-ROAD-AHMEDABAD.jpg" class="card-img-top  rounded-pill p-2 " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ashram Road Ahmedabad</h5>
+                    <small class="card-text display-0">The Chocolate Room’s unique business model delivers high margin with a minimum investment, taking your business to a whole new level.</small>
+                </div>
+            </div>
+            <div class="card col-md-6 col-lg-4 border-0 bg-transparent ">
+            <img src="../homePage/showrooms/GHATKOPAR-MUMBAI.jpg" class="card-img-top rounded-pill p-2 " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ghatkopar Mumbai</h5>
+                    <small class="card-text display-0">The Chocolate Room’s unique business model delivers high margin with a minimum investment, taking your business to a whole new level.</small>
+                </div>
+            </div>
+            <div class="card col-md-6 col-lg-4 border-0 bg-transparent ">
+            <img src="../homePage/showrooms/SILCHAR-ASSAM1.jpg" class="card-img-top rounded-pill p-2 " alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Silchar Assam</h5>
+                    <small class="card-text display-0 ">Our franchise model yields good return on investment at a faster level. Thus, delivering guaranteed and greater profits.</small>
+                </div>
+            </div>
+            <div class="card col-md-6 col-lg-4 border-0 bg-transparent ">
+                <img src="../homePage/showrooms/PAVILLION-MALL-NIKOL-AHMEDABAD.jpg" class="card-img-top rounded-pill p-2 mt-4 " alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Pavillion Mall Nikol Ahmedabad</h5>
+                <small class="card-text display-0 ">We are a trusted and loved brand that is sweetly associated and well-known among chocoholic circles everywhere.</small>
+                </div>
+            </div>
+            <div class="card col-md-6 col-lg-4 border-0 bg-transparent ">
+                <img src="../homePage/showrooms/TIDEL-PARK-CHENNAI.jpg" class="card-img-top rounded-pill p-2 mt-4 " alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Tidel Park Chennai</h5>
+                <small class="card-text display-0 ">We are a trusted and loved brand that is sweetly associated and well-known among chocoholic circles everywhere.</small>
+                </div>
+            </div>
+            <div class="card col-md-6 col-lg-4 border-0 bg-transparent ">
+                <img src="../homePage/showrooms/VASNAGAM-BARODA.jpg" class="card-img-top rounded-pill p-2 mt-4 " alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Vasnagam Baroda</h5>
+                <small class="card-text display-0 ">We are a trusted and loved brand that is sweetly associated and well-known among chocoholic circles everywhere.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ends -->
+
+    <!-- Footer -->
+    <div class="container-fluid  my-3 mt-lg-5 " id="foot-color">
+        <div class="row  ">
+            <div class="mt-3 col-lg-6 ">
+                <h3>The ChocoLate Room<span id="The-chocolate-span">.</span></h3>
+                <p class="fw-normal my-0 ">A Culinary Haven Where diverse flasvors and warm hospitality come together, creating a symhony of delicious memories.</small>
+            </div>
+            <div class="mt-3 col-lg-3 ">
+                <h3 class="">Address</h3>
+                <small><span><ion-icon name="book-outline"></ion-icon> </span>B 426, 427 Sobo Centre, South Bbopal, Ahmdabad-380058, Gujarat, India.</small>
+            </div>
+            <div class="mt-3 d-flex flex-column col-lg-3 ">
+                <h3 class="mb-3">contact Us</h3>
+                <small class=""><span><ion-icon name="call-outline"></ion-icon> </span>Ph : +91-02717-400005</small>
+                <small class=""><span><ion-icon name="mail-unread-outline"></ion-icon> </span><a href="mailto:mailto:info@thechocolateroom.com.viet">info@thechocolateroom.com.viet</a></small>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class=" d-flex justify-content-start align-items-center col-lg-7">
+                <a href="https://www.facebook.com/TheChocolateRoomIndia/?ref=ts"><i class='bx bxl-meta border-0 rounded-pill p-2 border-dark' id="links-meta-icon"></i></a>
+                <a href="https://www.instagram.com/thechocolateroomin/"><i class='bx bxl-instagram border-0  rounded-pill p-2 border-dark mx-2' id="links-insta-icon"></i></a>
+                <a href="https://twitter.com/TCRindia"><i class='bx bxl-twitter border-0  rounded-pill p-2 border-dark mx-2 ' id="links-twitter-icon"></i></a>
+                <a href="#"><i class='bx bxl-pinterest-alt border-0 rounded-pill p-2 border-dark mx-2 ' id="links-pintrest-icon"></i></a>
+            </div>
+
+            <!-- copy-right -->
+            <div class="col col-lg-5 text-lg-center ">
+                <p class="copy-right fs-6">2024<span id="copyrights">&copy;</span> The Chocolate Room<span id="The-chocolate-span">.</span> All rights reserved. </p>
+            </div>
+        </div>
+    </div>
+    <!-- Ends -->
+
+    <!-- Icons Import -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Import Script -->
+    <Script src="../Links/js/bootstrap.bundle.min.js"></Script>
+
+    <!-- Aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- External Script -->
+    <script src="../homePage/js/home.js"></script>
+    
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

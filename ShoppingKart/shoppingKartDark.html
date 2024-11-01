@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Chocolate Room</title>
+
+    <!-- tabicon -->
+    <link rel="icon" type="image/x-icon" href="../title/cup_2935413.png">
+
+    <!-- boxicons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Import Css -->
+    <link rel="stylesheet" href="../Links/css/bootstrap.min.css" type="text/css">
+
+    <!-- Aos Link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- External Css -->
+    <link rel="stylesheet" href="../ShoppingKart/css/shoppingKartDark.css" type="text/css">
+</head>
+<body>
+
+<!-- NavBar -->
+
+<nav class="navbar navbar-light bg-dark  sticky-top ">
+    <div class="container">
+        <button class="navbar-toggler order-1 order-lg-0 order-md-0 text-light " type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
+        
+        <a class="navbar-brand fs-6 d-flex text-light align-items-center fw-bolder order-0 order-lg-1  " href="#">
+            <img src="../logo/logo.png" alt="" width="50" height="50" >
+            The Chocolate Room
+        </a>
+        <a class="order-lg-2" id="menu-btn" href="../reservepage/reserve.html">Reserve a Table</a>
+        <!-- <button type="button" class="btn btn-outline-secondary order-lg-2" id="menu-btn">Reserve a Table</button> -->
+    </div>
+  </nav>
+
+<div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark position-absolute text-center " id="menu" >
+        <a href="../homePage/homeDark.html" id="menu-btn-toggle">Home</a>
+        <a href="../menuPage/menuDarkpage.html" id="menu-btn-toggle" target="_blank">Menu</a>
+        <a href="../blog/blogDark.html" id="menu-btn-toggle" target="_blank">Blog</a>
+        <a href="../careers/careersDark.html" id="menu-btn-toggle" target="_blank">Careers</a>
+        <a href="../aboutPage/aboutusDark.html" id="menu-btn-toggle" target="_blank">About Us</a>
+        <a href="../ShoppingKart/shoppingKartDark.html" id="menu-btn-toggle" target="_blank">Shopping Kart</a>
+        <hr>
+        
+        <!-- Split dropend button -->
+        <div class="btn-group dropend ">
+            <button type="button" class="btn btn-dark  text-warning  shadow-none ">Profie</button>
+            <button type="button" class="btn btn-dark   dropdown-toggle dropdown-toggle-split shadow-none" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropright</span></button>
+            <ul class="dropdown-menu bg-dark ">
+                <!-- Dropdown menu links -->
+                <img class="rounded-pill mx-2 " src="../profile/medium-shot-smiley-man-posing.jpg" alt="" width="30" height="24"><a href="../profile/profile.html">Profile</a>
+                <hr>
+                <div class=" d-flex flex-column mt-2 ">
+                    <a class="py-1 px-2 " href="../sign-in/sign-in-Dark.html">Sign-In</a>
+                    <a class="p-2 " href="#">Sign-Out</a>
+                </div>
+            </ul>
+        </div>
+        <hr>
+        <a href="../ShoppingKart/shoppingkart.html"><i class='bx bxs-brightness'></i> Switch to Light mode</a>
+    </div>
+</div>
+<!-- NavBar Ends -->
+
+
+<!-- Geo Location -->
+<div class="container bg-warning text-dark  " id="top">
+    <div class="col-12 d-md-flex justify-content-between align-items-center ">
+        <h3 class="my-4 text-center text-md-start "><img src="../logo/logo.png" class="me-3 " alt="" width="50" height="50" >Secure Checkout</h3>
+        <div>
+            <p class="mt-4">Allow your Location : <button type="button" onclick="findMyState()" class="btn btn-outline-danger  py-1 ">Click-Here</button></p>
+            <small class="status"></small>
+        </div>
+    </div>
+</div>
+<!-- Ends -->
+
+<!-- itemstoCart -->
+<div class="container my-5" >
+    <div class="row">
+        <div class="col-12 mt-4 mt-md-0  bg-light text-dark text-light d-flex justify-content-between align-items-center">
+            <h6 class="pt-2 kart">Oreo Cookie</h6>
+            <div class="buttons bg-light text-dark kart">
+                <span class="mx-2 px-1  bg-dark text-light" id="default-price">190</span>
+                <button class="border-0 " onclick="decreament()"> - </button>
+                <span class="border-0 px-1  text-danger" id="qnty">0</span>
+                <button class="border-0 " onclick="increament()"> + </button>
+            </div>
+        </div>
+        <div class="col-12 my-2 ">
+            <button type="button" onclick="deleteTag()" class="btn btn-outline-warning">Clear</button>
+        </div>
+    </div>
+</div>
+<!-- ends -->
+
+<!-- billingSec -->
+<div class="container text-dark " id="items-to-cart">
+    <div class="row">
+        <div class="col-12 d-flex justify-content-between align-items-center">
+            <p id="item-tot">Item Total</p>
+            <p id="item-total"></p>
+        </div>
+        <div class="col-12 d-flex justify-content-between align-items-center">
+            <p>Delivery Fee</p>
+            <p id="delivery-fee">25</p>
+        </div>
+        <div class="col-12 d-flex justify-content-between align-items-center">
+            <p>GST and Restaurant Charges 5%</p>
+            <p id="gst-bill"></p>
+        </div>
+        <hr>
+        <div class="col-12 d-flex justify-content-between align-items-center">
+            <p>Total</p>
+            <p id="total"></p>
+        </div>
+    </div>
+</div>
+
+<!-- Newsletter -->
+<div data-aos="flip-up" data-aos-duration="1500" class="container">
+    <div class="row">
+        <div class="col-12 col-lg-7 my-lg-5 ">
+            <h5 class="my-4 my-lg-4" id="newsletter">SUBSCRIBE <span class="text-warning ">TO</span> NEWSLETTER</h5>
+            <h2>Satisfaction is having more of soup</h2>
+            <h2>Find the Tastiest dishes.</h2>
+        </div>
+        <div class="col-12 col-lg-5 my-4 my-lg-5">
+            <form class="d-flex my-lg-5 " id="searchBox">
+                <input class="form-control me-2 rounded-pill" type="search" placeholder="Your email address..." aria-label="Search">
+                <button class="btn btn-outline-warning rounded-pill" type="submit">Subscribe</button>
+              </form>
+        </div>
+    </div>
+</div>
+<!-- Ends -->
+
+
+<!-- top redirect -->
+<div class="container-fluid">
+    <div class="topReach">
+        <a href="#top"><i class='bx bxs-chevrons-up'></i></a>
+    </div>
+</div>
+<!-- Ends -->
+
+<!-- footer-block-images -->
+<div class="col">
+    <!-- <h4 class="fw-bolder group-1-of-imgs foot-img-text-content">The Choclate Room<span class="text-warning ">.</span></h4>
+    <p class="fw-bold group-2-of-imgs foot-img-text-content">Enjoy the <span class="text-warning fw-bolder" >Moments</span> With Us</p> -->
+</div>
+<div class="container my-lg-5 ">
+  <div class="col-12 d-flex align-items-center ">
+      <img class="remaining-foot-img order-md-0" src="../footer-img/top-view-chocolate-tart-slate.jpg" alt="" width="175" height="120">
+      <img class="remaining-foot-img order-md-2 order-lg-1" src="../footer-img/plateau-with-sweet-cupcake-desserts-with-frosting-top.jpg" alt="" width="175" height="120">
+      <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="remaining-foot-img order-md-1 order-lg-2 " src="../footer-img/3d-delicious-burger-with-excited-man.jpg" alt="" width="320" height="190">
+      <img class="foot-last-before-img-disabled-low-size order-lg-3" src="../footer-img/dark-chocolate-dessert-wooden-table-indulgence-generated-by-ai.jpg" alt="" width="175" height="120">
+      <img class="foot-last-before-img-disabled-low-size order-lg-4"src="../footer-img/indulgent-homemade-chocolate-brownie-with-fudge-sauce-generated-by-ai.jpg" alt="" width="175" height="120">
+      <img class="foot-last-img-disabled-low-size order-lg-5" src="../footer-img/fresh-gourmet-meal-beef-taco-salad-plate-generated-by-ai.jpg" alt="" width="175" height="120"> 
+  </div>
+</div>
+<!-- Ends -->
+
+
+<!-- Footer -->
+<div class="container-fluid my-3 mt-lg-5  bg-secondary">
+    <div class="row  ">
+        <div class="mt-3 col-lg-6 ">
+            <h3>The ChocoLate Room<span id="The-chocolate-span">.</span></h3>
+            <p class="fw-normal my-0 ">A Culinary Haven Where diverse flasvors and warm hospitality come together, creating a symhony of delicious memories.</small>
+        </div>
+        <div class="mt-3 col-lg-3 ">
+            <h3 class="">Address</h3>
+            <small><span><ion-icon name="book-outline"></ion-icon> </span>B 426, 427 Sobo Centre, South Bbopal, Ahmdabad-380058, Gujarat, India.</small>
+        </div>
+        <div class="mt-3 d-flex flex-column col-lg-3 ">
+            <h3 class="mb-3">contact Us</h3>
+            <small class=""><span><ion-icon name="call-outline"></ion-icon> </span>Ph : +91-02717-400005</small>
+            <small class=""><span><ion-icon name="mail-unread-outline"></ion-icon> </span><a href="mailto:mailto:info@thechocolateroom.com.viet">info@thechocolateroom.com.viet</a></small>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class=" d-flex justify-content-start align-items-center col-lg-7">
+            <a href="https://www.facebook.com/TheChocolateRoomIndia/?ref=ts"><i class='bx bxl-meta border-0 rounded-pill p-2 border-dark' id="links-meta-icon"></i></a>
+            <a href="https://www.instagram.com/thechocolateroomin/"><i class='bx bxl-instagram border-0  rounded-pill p-2 border-dark mx-2' id="links-insta-icon"></i></a>
+            <a href="https://twitter.com/TCRindia"><i class='bx bxl-twitter border-0  rounded-pill p-2 border-dark mx-2 ' id="links-twitter-icon"></i></a>
+            <a href="#"><i class='bx bxl-pinterest-alt border-0 rounded-pill p-2 border-dark mx-2 ' id="links-pintrest-icon"></i></a>
+        </div>
+
+        <!-- copy-right -->
+        <div class="col col-lg-5 text-lg-center ">
+            <p class="copy-right fs-6">2024 <span id="copyrights">&copy;</span> The Chocolate Room<span id="The-chocolate-span">.</span> All rights reserved. </p>
+        </div>
+    </div>
+</div>
+<!-- Ends -->
+  
+
+<!-- Icons Import -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<!-- Import Script -->
+<Script src="../Links/js/bootstrap.bundle.min.js"></Script>
+
+<!-- Aos -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="../ShoppingKart/js/shopping.js"></script>
+
+<script>
+    AOS.init();
+</script>
+  
+</body>
+</html>
